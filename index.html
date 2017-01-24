@@ -1,12 +1,113 @@
-<!DOCTYPE html>
+ <!DOCTYPE html> 
 <html>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <head>
+    <title> Travis A. website portfolio </title>
+    <style>
 
-    <div>
-        <head>
-            <title> Welcome to my Website Portfolio </title>
-            <p> <img class ="img-responsive img-rounded" style="background-image" src="images/code.jpeg" alt="Picture of Code"/> </p>
+      body{
+        background: #000000 url("http://i1199.photobucket.com/albums/aa468/TravisAntonich/b1.jpg") no-repeat fixed center;
+        background-size: cover;
+        background-attachment: fixed;  }
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto; }
+      header{
+      }
+      div{
+
+        position: relative; }
+      div header{
+
+        position: relative; }
+      ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      li a{
+        float: left;
+        display: inline-block;
+        color: white;
+        width:33%;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover{
+        background-color: #111;
+      }
+
+      #page{
+        height:auto;
+        width:auto;
+        background: #000000 url("http://i1199.photobucket.com/albums/aa468/TravisAntonich/b6.png");
+        border: 1px solid #00FFFB; }
+
+      .overlay{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #008CBA;
+          overflow: hidden;
+          width: 0;
+          height: 100%;
+          transition: .5s ease;
+      }
+      .text{
+          white-space: nowrap;
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          overflow: hidden;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      }
+      .container {
+        container:relative;
+        width:50%;
+        }
+      .container:hover  .overlay {
+          width: 100%;
+        }
+      .saturate {-webkit-filter: saturate(7); filter: saturate(7);}
+
+
+    </style>
+
+
+  </head>
+
+  <body>
+    <div class = "center" style:"display:block margin:auto" id="page">
+      <header>
+        <div id="menu">
+          <ul>
+            <li><a href = "#aboutMe"> About Me </a> </li>
+            <li><a href = "#projects"> Projects </a> </li>
+            <li><a href = "#contacts"> Contact </a> </li>
+          </ul>
+        </div>
+        <div class = "container">
+          <img id = "ucsc" src= "http://i1199.photobucket.com/albums/aa468/TravisAntonich/UCSCSign__1485027437_99.6.88.165.jpg"  class= "img-responsive img-rounded saturate" height ="400" width = "600" style="border:2px solid #000000"/>
+          <div class = "overlay">
+            <div class="text"> Welcome to my website Portfolio!!! </div>
+          </div>
+        </div>
+      </header>
     </div>
 
+    <p> <img id = "projects" src= "http://i1199.photobucket.com/albums/aa468/TravisAntonich/Trav2.jpg" height = "10" class= "img-responsive img-rounded" /> </p>
+
+  </body>
 
 </html>
